@@ -11,4 +11,9 @@ kategorie:
 nahled: obrazky/nahled_markdown-syntax.jpg
 ---
 Chci se tu podělit proč jsem vlastně z operačního systému Windows přešel na Linux.
+<!--more-->
+### Historie
+Linux mě tak nějak fascinoval od mlada. Tak si pamatuju, že u jednoho časopisu (už netuším, jestli to byl CHIP nebo Computer) bylo 
+přibaleno CD s Mandrake Linuxem.
+
 
