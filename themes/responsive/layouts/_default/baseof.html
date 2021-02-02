@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+    {{- partial "head.html" . -}}
+    <body>
+        <div class="main-content">
+            {{- partial "header.html" . -}}
+            <div class="wrapper clearfix">
+                <div class="content"> 
+                    {{- block "main" . }}
+                    
+                    {{- end }}
+                </div>
+                <div class="sidebar clearfix">
+                    {{- partial "sidebar.html" . -}}
+                </div>
+            </div>
+            {{- partial "footer.html" . -}}
+        </div>
+        <script>
+            document.getElementById('menu-btn').addEventListener('click', function () {
+              document.getElementById('nav-menu').classList.toggle('show-menu')
+              document.getElementById('nav-search').classList.remove('show-search')
+            })
+            document.getElementById('search-btn').addEventListener('click', function () {
+              document.getElementById('nav-search').classList.toggle('show-search')
+              document.getElementById('nav-menu').classList.remove('show-menu')
+            })
+            </script>
+    </body>
+</html>

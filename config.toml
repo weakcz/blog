@@ -1,0 +1,39 @@
+baseURL = "http://olinuxu.unas.cz"
+languageCode = "cz"
+title = "O linuxu"
+theme = "responsive"
+
+paginate = "10"
+
+googleAnalytics = ""
+
+[params]
+    description = "očima bývalého windowsáka"
+    mainSections = ["prispevky", "blog", "news"]
+
+
+[taxonomies]
+  stitek = "stitek"
+  kategorie = "kategorie"
+  serial = "serial"
+  author = "author"
+
+[[menu.main]]
+  name = "O mně"
+  url = "/omne"
+
+[[menu.main]]
+  name = "Rozcestník"
+  url = "/rozcestnik"
+
+[[menu.main]]
+  name = "Odkazy"
+  url = "/odkazy"
+
+[[menu.main]]
+  name = "Hledání"
+  url = "/search"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "RSS"]

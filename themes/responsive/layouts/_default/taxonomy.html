@@ -1,0 +1,36 @@
+{{ define "main" }}
+{{ if eq .Title "Stitek"}}
+<h2>Všechny Štítky</h2>
+<ul>
+    {{ range .Site.Taxonomies.stitek }}  
+                <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+    {{ end }}
+</ul>
+    
+{{end}}
+{{ if eq .Title "Kategorie"}}
+<h2>Všechny Kategorie</h2>
+<ul>
+    {{ range .Site.Taxonomies.kategorie }}  
+                <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+    {{ end }}
+</ul>
+{{end}}
+
+{{ if eq .Title "Serial"}}
+<h2>Všechny Seriály</h2>
+<ul>
+    {{ range .Site.Taxonomies.serial }}  
+                <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+    {{ end }}
+</ul>
+{{end}}
+
+
+
+
+
+
+{{ end }}
+
+

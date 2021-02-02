@@ -1,0 +1,9 @@
+<h2>Všechny Štítky</h2>
+<ul>
+    {{ range .Site.Taxonomies.stitek }}  
+                <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+    {{ end }}
+</ul>
+
+
+

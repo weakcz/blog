@@ -1,0 +1,38 @@
+{{ if .Site.Taxonomies.kategorie }}
+    <div class="sidebar-item">
+        <a href="/kategorie/"><h2>Kategorie</h2></a>
+        <div>
+            <ul>
+            {{ range .Site.Taxonomies.kategorie }}
+                <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+            {{ end }}
+            </ul>
+        </div>
+    </div>
+{{ end }}
+<!-- seriály -->
+{{ if .Site.Taxonomies.serial }}
+<div class="sidebar-item">
+    <a href="/serial/"><h2>Seriály</h2></a>
+    <div>
+        <ul>
+        {{ range .Site.Taxonomies.serial }}
+          <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+       {{ end }}
+        </ul>
+    </div>
+</div>
+{{ end }}
+
+    <div class="sidebar-tags">
+        <a href="/stitek/"><h2>Štítky</h2></a>
+        <div>
+            <ul>
+            {{ range .Site.Taxonomies.stitek }}
+            <li>
+                <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }} [{{ .Count }}]</a>
+            </li>
+            {{ end }}
+            </ul>
+        </div>
+    </div>

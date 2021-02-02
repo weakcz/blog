@@ -1,0 +1,9 @@
+{{ define "main" }}
+<h2>Kategorie</h2>
+<h3>{{ .Title }}</h3>
+{{ $paginator := .Paginator }}
+{{ range $paginator.Pages }}
+{{ .Render "summary" }}
+{{ end }}
+{{ partial "pagination.html" .}}
+{{ end }}

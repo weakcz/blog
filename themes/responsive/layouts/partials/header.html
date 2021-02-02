@@ -1,0 +1,19 @@
+<div class="header clearfix">
+    <div class="wrapper">
+        <a href="/"><img src="/logo.png" class="logo-img"></a>
+        <h1 class="nav-logo"><a href="/">O linuxu</a></h1>
+        <nav>
+            <ul class="nav-menu" id="nav-menu">
+                {{ range .Site.Menus.main }}
+                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+            <form class="nav-search" id="nav-search" action="/search" method="GET">
+                <input name="s" type="text" placeholder="Zadejte co chcete hledat">
+                <button><i class="fa fa-search"></i></button>
+            </form>
+            <div class="btn search-btn"><span class="fa fa-search" id="search-btn"></span></div>
+            <div class="btn menu-btn"><span class="fa fa-bars" id="menu-btn"></span></div>
+        </nav>
+    </div>
+</div>
