@@ -2,8 +2,11 @@ baseURL = "http://olinuxu.unas.cz"
 languageCode = "cz"
 title = "O linuxu"
 theme = "responsive"
-
+removePathAccents = true
 paginate = "10"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
 
 googleAnalytics = ""
 
@@ -31,8 +34,8 @@ googleAnalytics = ""
   url = "/odkazy"
 
 [[menu.main]]
-  name = "Hledání"
-  url = "/search"
+  name = "Rss"
+  url = "/rss.xml"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

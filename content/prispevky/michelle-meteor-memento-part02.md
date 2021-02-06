@@ -1,7 +1,7 @@
 ---
 title: "Michelle's Meteor Memento 02"
-date: 2020-12-16T12:40:19+01:00
-draft: true
+date: 2021-02-05
+draft: false
 showTOC: false
 stitek:
 - povídky
@@ -10,10 +10,8 @@ stitek:
 - létání
 kategorie:
 - Povídky
-serial:
-- Michelle's Meteor Memento
-nahled:
-nahled: obrazky/michelles-meteor-memento/michelle_s_meteor_memento_nahled.png
+serial: "Michelle's Meteor Memento"
+nahled: obrazky/prispevky/michelles-meteor-memento/michelle_s_meteor_memento_nahled.png
 ---
 The morning sun had been shining into the apartment room for hours before its sole inhabitant finally decided to wake up. Michelle Jenkins had never been a deep sleeper and would normally wake up at the smallest hint of sunlight that entered her room. <!--more-->Taking a look at the time, the young woman saw that it was already 11 o’clock. Even on a Saturday, she rarely slept longer than 8 o’clock.Michelle was surprised how refreshed she felt and wondered how long she had been asleep. Looking back at it now, Michelle sure had paid no attention to the time. She had been preparing for bed around 10 p.m. when something unexpected happened. “Unexpected,” Michelle giggled, “that doesn’t even begin to describe it.” In fact, the young woman had accidentally swallowed a certain liquid that had caused her to transform from a plain woman into a super powered goddess. Michelle looked sideways seeing the reason for that fantastic turn of events: A strange plant that was sitting on her nightstand. It possessed strange buds that contained the very liquid that had transformed her. Another dose of that liquid would surely transform her again, Michelle thought. The idea was tempting, but the young woman knew that she possessed no clothes fitting for her amazing alter ego. “Damn,” she thought, “I should have taken measurements when I had the chance. Now I’ll have to guess what size I need.”
 

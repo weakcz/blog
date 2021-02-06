@@ -104,5 +104,3 @@ function render(templateString, data) {
   return templateString;
 
 }
-
-$(this).effect("highlight", {color: 'blue'}, 3000);

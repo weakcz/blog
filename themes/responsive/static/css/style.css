@@ -27,6 +27,13 @@ body a:hover {
     text-decoration: none;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 /* Hlavička */
 
 .header {
@@ -154,6 +161,7 @@ body a:hover {
 
 
 
+
 /* Příspěvek */
 .post {
     margin-bottom: 3em;
@@ -163,35 +171,55 @@ body a:hover {
     float:left;
     width: 30%;
     padding-right: 1em;
+
+}
+
+.post-image img {
+    width: 30%;
 }
 .post-content {
     float: right;
     width: 70%;
 }
 
+.post-content h2 {
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
+}
+
 .post-meta {
-    font-size: 0.9em;
-    margin-bottom: 1em;
+    font-size: 0.8em;
+    margin: 0px;
+    padding: 0px;
 }
 
 .post-meta ul {
-    list-style: none;
-    padding: 0px; 
+    border: 1px red;
+    padding: 0px;
+    margin: 0px; 
 }
 .post-meta li {
     display: inline;
     margin-right: 5px;
 }
 
-.post-content h2 {
-    margin-top: 0px;
+.post-preview {
+    margin-top: -15px;
+    padding: 0px;
 }
+
+.post-preview img {
+    width: 100%;
+}
+
+
 
 .sidebar {
     float: right;
     width: 25%;
     padding: 1em;
     padding-bottom: 40px;
+    line-height: 0.8em;
 }
 
 .sidebar ul {
@@ -326,18 +354,25 @@ margin-bottom: 0.5em;
 
     .content {
         width: 100%;
-        padding-bottom: 0px;
+        padding: 0px 20px 0px 20px;
     }
+
+
     .sidebar {
         width: 100%;
         text-align: center;
-        padding-bottom: 50px;
+        padding: 0px 0px 80px 0px;
+   
     }
-
+.post {
+    margin-bottom: 1em;
+    )
+}
     .post-image {
         width: 100%;
         margin-right: 0px;
         margin-bottom: 1em;
+        padding: 0px;
     }
 
     .post-content {

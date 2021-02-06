@@ -21,6 +21,9 @@
             {{- end }}
             </li>
             {{ end }}
+
+            <li><i class="fa fa-inbox"></i>&nbsp;
+               
             <li>
                 {{ if .Params.stitek }}
                 <i class="fa fa-tags"></i>
@@ -34,7 +37,30 @@
         <div class="post-preview">
             {{ .Content }}
         </div>
-        {{ .Params.serial }}
+        
+        {{ $post_title := .Title }}
+        {{ if .Params.serial }}
+        <hr>
+        <h3>Další v seriálu:  {{ .Params.serial }}</h3>
+        {{ $ser := .Params.serial | urlize}}  
+        {{ range $key, $taxonomy := .Site.Taxonomies.serial }}
+        {{ if eq $key $ser}}
+        <ul>
+            {{ range $taxonomy.Pages.ByDate }}
+            {{ if eq $post_title .LinkTitle}}
+            <li hugo-nav="{{ .RelPermalink }}">
+                <b>{{ .LinkTitle }}</b> <i>[právě čtete]</i>
+            </li>
+            {{ else }}
+                        <li hugo-nav="{{ .RelPermalink }}">
+                <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+            </li>
+            {{ end }}
+            {{ end }}
+        </ul>
+        {{ end }}
+    {{ end }}
+    {{ end }}
     </div>
 </div>
 {{ end }}
