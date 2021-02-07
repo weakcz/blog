@@ -5,8 +5,6 @@ theme = "responsive"
 removePathAccents = true
 paginate = "10"
 
-PygmentsCodeFences = true
-PygmentsStyle = "monokai"
 
 googleAnalytics = ""
 
