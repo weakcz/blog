@@ -27,7 +27,7 @@
                 {{ if .Params.stitek }}
                 <i class="fa fa-tags"></i>
                   {{ range .Params.stitek }}
-                    <a href="{{ "/stitek/" | relURL }}{{ . | urlize}}">{{ . }}</a>&nbsp;
+                    <a href="{{ "/stitek/" | relURL }}{{ . | urlize}}" class="tag">{{ . }}</a>&nbsp;
                   {{ end }}
                 {{ end }}
             </li>

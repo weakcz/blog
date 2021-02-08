@@ -14,7 +14,6 @@ kategorie:
 - Povídky
 serial: "Michelle's Meteor Memento"
 nahled: obrazky/prispevky/michelles-meteor-memento/michelle_s_meteor_memento_nahled.png
-
 ---
 
 The morning sun had been shining into the apartment room for hours before its sole inhabitant finally decided to wake up. Michelle Jenkins had never been a deep sleeper and would normally wake up at the smallest hint of sunlight that entered her room. 

@@ -34,6 +34,57 @@ button:focus {
     outline: none;
 }
 
+figcaption h4 {
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    color: #AFBAC4;
+}
+
+
+.tag {
+color:#57CC8A;
+background-color: #494F56;
+padding: 0.3em;
+border-radius: 7%;
+}
+
+.tag:hover {
+    background-color: #72767C;
+    color: white;
+}
+
+/* Markdown styly */
+.markdown h1,h2,h3,h4,h5,h6
+ {
+  color: white;
+}
+
+.markdown blockquote {
+    margin: 0px;
+    padding-left: 10px;
+    border-left: 5px solid #57CC8A;
+}
+
+.markdown table, th, td {
+    border: 1px solid;
+    margin:0px;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+.markdown pre {
+    border-left: 5px solid #57CC8A;
+    padding: 10px;
+}
+
+.markdown kbd {
+    background-color: #494F56;
+
+}
+
 /* Hlavička */
 
 .header {
@@ -155,9 +206,6 @@ button:focus {
     padding-bottom: 60px; 
 }
 
-.content h2 {
-    color: white;
-}
 
 
 
@@ -219,7 +267,7 @@ button:focus {
     width: 25%;
     padding: 1em;
     padding-bottom: 40px;
-    line-height: 0.8em;
+    line-height: 1em;
 }
 
 .sidebar ul {
