@@ -1,7 +1,8 @@
 ---
-title: "Michelle's Meteor Memento 02"
-date: 2021-02-05
+title: "Michelle's Meteor Memento Part 02"
+date: 2021-01-02
 draft: false
+autor: njae
 showTOC: false
 stitek:
 - povídky
@@ -13,7 +14,7 @@ kategorie:
 serial: "Michelle's Meteor Memento"
 nahled: obrazky/prispevky/michelles-meteor-memento/michelle_s_meteor_memento_nahled.png
 ---
-The morning sun had been shining into the apartment room for hours before its sole inhabitant finally decided to wake up. Michelle Jenkins had never been a deep sleeper and would normally wake up at the smallest hint of sunlight that entered her room. <!--more-->Taking a look at the time, the young woman saw that it was already 11 o’clock. Even on a Saturday, she rarely slept longer than 8 o’clock.Michelle was surprised how refreshed she felt and wondered how long she had been asleep. Looking back at it now, Michelle sure had paid no attention to the time. She had been preparing for bed around 10 p.m. when something unexpected happened. “Unexpected,” Michelle giggled, “that doesn’t even begin to describe it.” In fact, the young woman had accidentally swallowed a certain liquid that had caused her to transform from a plain woman into a super powered goddess. Michelle looked sideways seeing the reason for that fantastic turn of events: A strange plant that was sitting on her nightstand. It possessed strange buds that contained the very liquid that had transformed her. Another dose of that liquid would surely transform her again, Michelle thought. The idea was tempting, but the young woman knew that she possessed no clothes fitting for her amazing alter ego. “Damn,” she thought, “I should have taken measurements when I had the chance. Now I’ll have to guess what size I need.”
+The morning sun had been shining into the apartment room for hours before its sole inhabitant finally decided to wake up. <!--more-->Michelle Jenkins had never been a deep sleeper and would normally wake up at the smallest hint of sunlight that entered her room. Taking a look at the time, the young woman saw that it was already 11 o’clock. Even on a Saturday, she rarely slept longer than 8 o’clock.Michelle was surprised how refreshed she felt and wondered how long she had been asleep. Looking back at it now, Michelle sure had paid no attention to the time. She had been preparing for bed around 10 p.m. when something unexpected happened. “Unexpected,” Michelle giggled, “that doesn’t even begin to describe it.” In fact, the young woman had accidentally swallowed a certain liquid that had caused her to transform from a plain woman into a super powered goddess. Michelle looked sideways seeing the reason for that fantastic turn of events: A strange plant that was sitting on her nightstand. It possessed strange buds that contained the very liquid that had transformed her. Another dose of that liquid would surely transform her again, Michelle thought. The idea was tempting, but the young woman knew that she possessed no clothes fitting for her amazing alter ego. “Damn,” she thought, “I should have taken measurements when I had the chance. Now I’ll have to guess what size I need.”
 
 
 Michelle finally stood up and started to dress herself. Soon she was reminded of the final discovery she had made before going to bed. Even though she had returned to normal, there were still some slight differences to how she was before her initial transformation. The plain brunette could have sworn that her hair looked healthier and that she had lost some pounds. Now her clothes confirmed the latter as they fit a bit more loosely than she was used to. Michelle was alright with that since she didn’t want to buy new clothes for her mortal form too. Now fully dressed Michelle entered her kitchen to prepare breakfast. She wasn’t actually hungry, but habit and appetite didn’t allow her to leave the apartment on an empty stomach.  She wondered whether it would suffice to guess her new measurements. After all, she could still drink a tiny amount of the liquid so that the young woman would turn return to her amazon form long enough to take her measurements. She dismissed the idea again. Not only didn’t she know how exactly the amount of liquid related to the time spent in goddess mode, Michelle also feared that she wouldn’t want to transform back to normal just to buy some clothes.  She concluded that she had to buy clothes based on her guess and if she was wrong, the young woman could still return the clothes and change them for others. Michelle was so consumed in her thoughts that she didn’t realize how she ate at least twice as much as she would normally.
@@ -252,9 +253,7 @@ This reminded Michelle that the powers she could demonstrate were limited. “I 
 
 Without further explanation, Michelle activated her flight powers. She felt herself becoming lighter and lifted herself onto her toes and then into the air. Amanda rose from the couch, watching the airborne woman intently.
 
-
-
-
+![](/obrazky/prispevky/michelles-meteor-memento/michelle_s_meteor_memento_02_01.png#center)
 
 “I can’t believe this is happening,” she said while circling around her friend-turned-goddess. “How does it feel?”
 

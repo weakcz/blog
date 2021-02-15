@@ -6,14 +6,25 @@
         <div class="main-content">
             {{- partial "header.html" . -}}
             <div class="wrapper clearfix">
-                <div class="content"> 
+                <div class="{{ if eq .Params.showSidebar false }}content-full{{ else}}content{{ end }}"> 
+                    
                     {{- block "main" . }}
                     
                     {{- end }}
+
                 </div>
+                {{ if eq .Params.showTOC true }}
+                    <div class="sidebar-toc">
+                    <h2>Obsah</h2>
+                        {{ .TableOfContents }}
+                    </div>
+                {{ end }}
+                {{ if eq .Params.showSidebar false }}
+                {{ else}}
                 <div class="sidebar clearfix">
                     {{- partial "sidebar.html" . -}}
                 </div>
+                {{ end }}
             </div>
             {{- partial "footer.html" . -}}
         </div>
@@ -26,6 +37,7 @@
               document.getElementById('nav-search').classList.toggle('show-search')
               document.getElementById('nav-menu').classList.remove('show-menu')
             })
+
             </script>
     </body>
 </html>

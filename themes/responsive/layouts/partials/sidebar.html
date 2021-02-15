@@ -1,3 +1,4 @@
+
 {{ if .Site.Taxonomies.kategorie }}
     <div class="sidebar-item">
         <a href="/kategorie/"><h2>Kategorie</h2></a>
@@ -26,12 +27,11 @@
 
     <div class="sidebar-tags">
         <a href="/stitek/"><h2>Štítky</h2></a>
-        <div>
-            <ul>
+        <div class="sidebar-tag-cloud">
+            
             {{ range .Site.Taxonomies.stitek }}
-            <li>
-                <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }} [{{ .Count }}]</a>
-            </li>
+            
+                <a href="{{ .Page.RelPermalink }}" class="tag">{{ .Page.Title }}</a><span class="tag-count">{{ .Count }}</span>
             {{ end }}
             </ul>
         </div>

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Odkazy on O linuxu</title>
-    <link>http://olinuxu.unas.cz/odkazy/</link>
+    <link>blog/odkazy/</link>
     <description>Recent content in Odkazy on O linuxu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cz</language>
-    <lastBuildDate>Wed, 09 Dec 2020 20:32:42 +0100</lastBuildDate><atom:link href="http://olinuxu.unas.cz/odkazy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Dec 2020 20:32:42 +0100</lastBuildDate><atom:link href="blog/odkazy/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -12,8 +12,8 @@ body {
     background-color: #353B43;
     color: #AFBAC4;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.3em;
-    font-size: 1.1em;
+    line-height: 1.5em;
+    font-size: 18px;
 
 }
 
@@ -25,6 +25,64 @@ body a {
 body a:hover {
     color: #AFBAC4;
     text-decoration: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+figcaption h4 {
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    color: #AFBAC4;
+}
+
+
+.tag {
+color:#57CC8A;
+background-color: #494F56;
+padding: 0.3em;
+border-radius: 7%;
+}
+
+.tag:hover {
+    background-color: #72767C;
+    color: white;
+}
+
+/* Markdown styly */
+.markdown h1,h2,h3,h4,h5,h6
+ {
+  color: white;
+}
+
+.markdown blockquote {
+    margin: 0px;
+    padding-left: 10px;
+    border-left: 5px solid #57CC8A;
+}
+
+.markdown table, th, td {
+    border: 1px solid;
+    margin:0px;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+.markdown pre {
+    border-left: 5px solid #57CC8A;
+    padding: 10px;
+}
+
+.markdown kbd {
+    background-color: #494F56;
+
 }
 
 /* Hlavička */
@@ -53,8 +111,20 @@ body a:hover {
     padding: 0px;
 }
 
-.nav-menu a {
+.nav-logo a{
     color: white;
+}
+
+.nav-logo a:hover {
+    color: white
+}
+
+.nav-link {
+    color:white;
+}
+
+.nav-menu a {
+    color: white ;
     font-weight: bold;
     text-decoration: none;
 }
@@ -136,9 +206,7 @@ body a:hover {
     padding-bottom: 60px; 
 }
 
-.content h2 {
-    color: white;
-}
+
 
 
 
@@ -151,35 +219,55 @@ body a:hover {
     float:left;
     width: 30%;
     padding-right: 1em;
+
+}
+
+.post-image img {
+    width: 30%;
 }
 .post-content {
     float: right;
     width: 70%;
 }
 
+.post-content h2 {
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
+}
+
 .post-meta {
-    font-size: 0.9em;
-    margin-bottom: 1em;
+    font-size: 0.8em;
+    margin: 0px;
+    padding: 0px;
 }
 
 .post-meta ul {
-    list-style: none;
-    padding: 0px; 
+    border: 1px red;
+    padding: 0px;
+    margin: 0px; 
 }
 .post-meta li {
     display: inline;
     margin-right: 5px;
 }
 
-.post-content h2 {
-    margin-top: 0px;
+.post-preview {
+    margin-top: -15px;
+    padding: 0px;
 }
+
+.post-preview img {
+    width: 100%;
+}
+
+
 
 .sidebar {
     float: right;
     width: 25%;
     padding: 1em;
     padding-bottom: 40px;
+    line-height: 1em;
 }
 
 .sidebar ul {
@@ -314,18 +402,25 @@ margin-bottom: 0.5em;
 
     .content {
         width: 100%;
-        padding-bottom: 0px;
+        padding: 0px 20px 0px 20px;
     }
+
+
     .sidebar {
         width: 100%;
         text-align: center;
-        padding-bottom: 50px;
+        padding: 0px 0px 80px 0px;
+   
     }
-
+.post {
+    margin-bottom: 1em;
+    )
+}
     .post-image {
         width: 100%;
         margin-right: 0px;
         margin-bottom: 1em;
+        padding: 0px;
     }
 
     .post-content {

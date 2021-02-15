@@ -2,89 +2,107 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stitek on O linuxu</title>
-    <link>http://olinuxu.unas.cz/stitek/</link>
+    <link>blog/stitek/</link>
     <description>Recent content in Stitek on O linuxu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cz</language>
-    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://olinuxu.unas.cz/stitek/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>linux</title>
-      <link>http://olinuxu.unas.cz/stitek/linux/</link>
-      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://olinuxu.unas.cz/stitek/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>osobní</title>
-      <link>http://olinuxu.unas.cz/stitek/osobn%C3%AD/</link>
-      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://olinuxu.unas.cz/stitek/osobn%C3%AD/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Mon, 08 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="blog/stitek/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>létání</title>
-      <link>http://olinuxu.unas.cz/stitek/l%C3%A9t%C3%A1n%C3%AD/</link>
-      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      <link>blog/stitek/letani/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://olinuxu.unas.cz/stitek/l%C3%A9t%C3%A1n%C3%AD/</guid>
+      <guid>blog/stitek/letani/</guid>
       <description></description>
     </item>
     
     <item>
       <title>povídky</title>
-      <link>http://olinuxu.unas.cz/stitek/pov%C3%ADdky/</link>
-      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      <link>blog/stitek/povidky/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://olinuxu.unas.cz/stitek/pov%C3%ADdky/</guid>
+      <guid>blog/stitek/povidky/</guid>
       <description></description>
     </item>
     
     <item>
       <title>supersíla</title>
-      <link>http://olinuxu.unas.cz/stitek/supers%C3%ADla/</link>
-      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      <link>blog/stitek/supersila/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://olinuxu.unas.cz/stitek/supers%C3%ADla/</guid>
+      <guid>blog/stitek/supersila/</guid>
       <description></description>
     </item>
     
     <item>
       <title>transformace</title>
-      <link>http://olinuxu.unas.cz/stitek/transformace/</link>
-      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      <link>blog/stitek/transformace/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://olinuxu.unas.cz/stitek/transformace/</guid>
+      <guid>blog/stitek/transformace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arch</title>
+      <link>blog/stitek/arch/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/stitek/arch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>instalace</title>
+      <link>blog/stitek/instalace/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/stitek/instalace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>blog/stitek/linux/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/stitek/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>osobní</title>
+      <link>blog/stitek/osobni/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/stitek/osobni/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blbost</title>
-      <link>http://olinuxu.unas.cz/stitek/blbost/</link>
+      <link>blog/stitek/blbost/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://olinuxu.unas.cz/stitek/blbost/</guid>
+      <guid>blog/stitek/blbost/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jeste</title>
-      <link>http://olinuxu.unas.cz/stitek/jeste/</link>
+      <link>blog/stitek/jeste/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://olinuxu.unas.cz/stitek/jeste/</guid>
+      <guid>blog/stitek/jeste/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vetsi</title>
-      <link>http://olinuxu.unas.cz/stitek/vetsi/</link>
+      <link>blog/stitek/vetsi/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://olinuxu.unas.cz/stitek/vetsi/</guid>
+      <guid>blog/stitek/vetsi/</guid>
       <description></description>
     </item>
     

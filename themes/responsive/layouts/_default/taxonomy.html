@@ -1,15 +1,16 @@
 {{ define "main" }}
 {{ if eq .Title "Stitek"}}
-<h2>Všechny Štítky</h2>
-<ul>
+<h2 class="content-header">Všechny Štítky</h2>
+<div class="taxo-tags">
+
     {{ range .Site.Taxonomies.stitek }}  
-                <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+                <a href="{{ .Page.RelPermalink }}" class="tag">{{ .Page.Title }}</a><span class="tag-count">{{ .Count }}</span>
     {{ end }}
-</ul>
-    
+
+</div> 
 {{end}}
 {{ if eq .Title "Kategorie"}}
-<h2>Všechny Kategorie</h2>
+<h2 class="content-header">Všechny Kategorie</h2>
 <ul>
     {{ range .Site.Taxonomies.kategorie }}  
                 <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
@@ -18,9 +19,18 @@
 {{end}}
 
 {{ if eq .Title "Serial"}}
-<h2>Všechny Seriály</h2>
+<h2 class="content-header">Všechny Seriály</h2>
 <ul>
     {{ range .Site.Taxonomies.serial }}  
+                <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+    {{ end }}
+</ul>
+{{end}}
+
+{{ if eq .Title "Autor"}}
+<h2 class="content-header">Autoři</h2>
+<ul>
+    {{ range .Site.Taxonomies.autor }}  
                 <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
     {{ end }}
 </ul>

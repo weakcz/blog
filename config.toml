@@ -1,10 +1,11 @@
-baseURL = "http://olinuxu.unas.cz"
+baseURL = "blog/"
 languageCode = "cz"
 title = "O linuxu"
 theme = "responsive"
 removePathAccents = true
 paginate = "10"
 
+prispevky =":/title/"
 
 googleAnalytics = ""
 
@@ -17,7 +18,7 @@ googleAnalytics = ""
   stitek = "stitek"
   kategorie = "kategorie"
   serial = "serial"
-  author = "author"
+  autor = "autor"
 
 [[menu.main]]
   name = "O mně"

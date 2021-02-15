@@ -2,17 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Serial on O linuxu</title>
-    <link>http://olinuxu.unas.cz/serial/</link>
+    <link>blog/serial/</link>
     <description>Recent content in Serial on O linuxu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cz</language>
-    <lastBuildDate>Mon, 07 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://olinuxu.unas.cz/serial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="blog/serial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Serena&#39;s Lucky Day</title>
+      <link>blog/serial/serenas-lucky-day/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/serial/serenas-lucky-day/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jak na Arch Linux</title>
+      <link>blog/serial/jak-na-arch-linux/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/serial/jak-na-arch-linux/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Michelle&#39;s Meteor Memento</title>
-      <link>http://olinuxu.unas.cz/serial/michelles-meteor-memento/</link>
-      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      <link>blog/serial/michelles-meteor-memento/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://olinuxu.unas.cz/serial/michelles-meteor-memento/</guid>
+      <guid>blog/serial/michelles-meteor-memento/</guid>
       <description></description>
     </item>
     

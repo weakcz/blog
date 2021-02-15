@@ -3,21 +3,25 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="/favicon.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href=/blog/css/styles.css rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> 
-    <title>Search | O linuxu</title>
-    <meta name="description" content="You can change search page details above.
-Keep this file saft to ensure Hugo generate the search page. ">
-    <link rel="canonical" href="http://olinuxu.unas.cz/search/" />
-    <meta property="og:title" content="Search" />
-<meta property="og:description" content="očima bývalého windowsáka" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://olinuxu.unas.cz/search/" />
+    <title>Search Results | O linuxu</title>
+    <meta name="description" content="Nothing on this page will be visible. This file exists solely to respond to /search URL.
+Setting a very low sitemap priority will tell search engines this is not important content. ">
+    <link rel="canonical" href="blog/search/" />
+    <meta property="og:image" content="/blog/">
+    <meta property="og:title" content="Search Results" />
+<meta property="og:description" content="Nothing on this page will be visible. This file exists solely to respond to /search URL.
+Setting a very low sitemap priority will tell search engines this is not important content." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="blog/search/" />
+
 
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Search"/>
-<meta name="twitter:description" content="očima bývalého windowsáka"/>
+<meta name="twitter:title" content="Search Results"/>
+<meta name="twitter:description" content="Nothing on this page will be visible. This file exists solely to respond to /search URL.
+Setting a very low sitemap priority will tell search engines this is not important content."/>
 
     
     
@@ -32,13 +36,13 @@ Keep this file saft to ensure Hugo generate the search page. ">
         <nav>
             <ul class="nav-menu" id="nav-menu">
                 
-                    <li><a href="/omne">O mně</a></li>
+                    <li><a href="blog/omne">O mně</a></li>
                 
-                    <li><a href="/odkazy">Odkazy</a></li>
+                    <li><a href="blog/odkazy">Odkazy</a></li>
                 
-                    <li><a href="/rozcestnik">Rozcestník</a></li>
+                    <li><a href="blog/rozcestnik">Rozcestník</a></li>
                 
-                    <li><a href="/tipy-a-triky">Tipy a Triky</a></li>
+                    <li><a href="blog/rss.xml">Rss</a></li>
                 
             </ul>
             <form class="nav-search" id="nav-search" action="/search" method="GET">
@@ -50,29 +54,33 @@ Keep this file saft to ensure Hugo generate the search page. ">
         </nav>
     </div>
 </div><div class="wrapper clearfix">
-                <div class="content">
+                <div class="content"> 
+                    /blog/css/styles.css
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
-<script src="http://olinuxu.unas.cz/js/search.js"></script>
-<section class="resume-section p-3 p-lg-5 d-flex flex-column">
-  <div class="my-auto" >
-    <form action="http://olinuxu.unas.cz/search">
-      <input id="search-query" name="s"/>
-    </form>
-    <div id="search-results">
-     <h3>Nalezené Stránky</h3>
-    </div>
+<script src="blog/js/search.js"></script>
+
+  <div id="search-results">
+    <h2>Výsledky vyhledávání</h2><br />
   </div>
-</section>
+
 
 <script id="search-result-template" type="text/x-js-template">
-    <div id="summary-${key}">
-      <h4><a href="${link}">${title}</a></h4>
-      <p>${snippet}</p>
-      ${ isset tags }<p>Tags: ${tags}</p>${ end }
-      ${ isset categories }<p>Categories: ${categories}</p>${ end }
-    </div>
+  <div id="summary-${key}" class="post clearfix">
+    <div class="post-content-full">      
+      <h2><a href="${link}">${title}</a></h2>
+      <div class="post-meta">
+        <ul>
+          ${ isset categories }<li><i class="fa fa-inbox"></i>&nbsp; ${categories}</li>${ end }
+          ${ isset tags }<li><i class="fa fa-tags"></i> ${tags}</li>${ end }
+        </ul>
+      </div>
+      <div class="post-preview">
+        ${snippet}
+      </div>
+  </div>
+
 </script>
 
                 </div>
@@ -82,11 +90,13 @@ Keep this file saft to ensure Hugo generate the search page. ">
         <div>
             <ul>
             
-                <li><a href="/kategorie/mark/">Mark</a></li>
+                <li><a href="blog/kategorie/arch-linux/">Arch Linux</a></li>
             
-                <li><a href="/kategorie/pov%C3%ADdka/">Povídka</a></li>
+                <li><a href="blog/kategorie/mark/">Mark</a></li>
             
-                <li><a href="/kategorie/pov%C3%ADdky/">Povídky</a></li>
+                <li><a href="blog/kategorie/osobni/">Osobní</a></li>
+            
+                <li><a href="blog/kategorie/povidky/">Povídky</a></li>
             
             </ul>
         </div>
@@ -99,9 +109,11 @@ Keep this file saft to ensure Hugo generate the search page. ">
     <div>
         <ul>
         
-          <li><a href="/serial/another-piece-of-paradise/">Another Piece of Paradise</a></li>
+          <li><a href="blog/serial/jak-na-arch-linux/">Jak na Arch Linux</a></li>
        
-          <li><a href="/serial/michelles-meteor-memento/">Michelle&#39;s Meteor Memento</a></li>
+          <li><a href="blog/serial/michelles-meteor-memento/">Michelle&#39;s Meteor Memento</a></li>
+       
+          <li><a href="blog/serial/serenas-lucky-day/">Serena&#39;s Lucky Day</a></li>
        
         </ul>
     </div>
@@ -114,47 +126,47 @@ Keep this file saft to ensure Hugo generate the search page. ">
             <ul>
             
             <li>
-                <a href="/stitek/blbost/">blbost [1]</a>
+                <a href="blog/stitek/arch/">arch [1]</a>
             </li>
             
             <li>
-                <a href="/stitek/jeste/">jeste [1]</a>
+                <a href="blog/stitek/blbost/">blbost [1]</a>
             </li>
             
             <li>
-                <a href="/stitek/l%C3%A9t%C3%A1n%C3%AD/">létání [1]</a>
+                <a href="blog/stitek/instalace/">instalace [1]</a>
             </li>
             
             <li>
-                <a href="/stitek/mermaid/">mermaid [1]</a>
+                <a href="blog/stitek/jeste/">jeste [1]</a>
             </li>
             
             <li>
-                <a href="/stitek/paradise/">paradise [1]</a>
+                <a href="blog/stitek/letani/">létání [3]</a>
             </li>
             
             <li>
-                <a href="/stitek/pov%C3%ADdky/">povídky [1]</a>
+                <a href="blog/stitek/linux/">linux [2]</a>
             </li>
             
             <li>
-                <a href="/stitek/supers%C3%ADla/">supersíla [1]</a>
+                <a href="blog/stitek/osobni/">osobní [1]</a>
             </li>
             
             <li>
-                <a href="/stitek/transformace/">transformace [1]</a>
+                <a href="blog/stitek/povidky/">povídky [3]</a>
             </li>
             
             <li>
-                <a href="/stitek/transformation/">transformation [1]</a>
+                <a href="blog/stitek/supersila/">supersíla [3]</a>
             </li>
             
             <li>
-                <a href="/stitek/transgender/">transgender [1]</a>
+                <a href="blog/stitek/transformace/">transformace [3]</a>
             </li>
             
             <li>
-                <a href="/stitek/vetsi/">vetsi [1]</a>
+                <a href="blog/stitek/vetsi/">vetsi [1]</a>
             </li>
             
             </ul>

@@ -2,18 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>linux on O linuxu</title>
-    <link>http://olinuxu.unas.cz/stitek/linux/</link>
+    <link>blog/stitek/linux/</link>
     <description>Recent content in linux on O linuxu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cz</language>
-    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://olinuxu.unas.cz/stitek/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="blog/stitek/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jak nainstalovat Arch Linux</title>
+      <link>blog/prispevky/2021/02/jak-nainstalovat-arch-linux/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/prispevky/2021/02/jak-nainstalovat-arch-linux/</guid>
+      <description>&lt;p&gt;V tomto článku vám ukážu jak nainstalovat Arch Linux.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Proč jsem přešel na Linux</title>
-      <link>http://olinuxu.unas.cz/prispevky/2021/02/proc-jsem-presel-na-linux/</link>
+      <link>blog/prispevky/2021/02/proc-jsem-presel-na-linux/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://olinuxu.unas.cz/prispevky/2021/02/proc-jsem-presel-na-linux/</guid>
-      <description>Chci se tu podělit proč jsem vlastně z operačního systému Windows přešel na Linux.</description>
+      <guid>blog/prispevky/2021/02/proc-jsem-presel-na-linux/</guid>
+      <description>&lt;p&gt;Chci se tu podělit proč jsem vlastně z operačního systému Windows přešel na Linux.&lt;/p&gt;</description>
     </item>
     
   </channel>

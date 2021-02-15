@@ -1,0 +1,8 @@
+{{ define "main" }}
+<h2 class="content-header">Příspěvky od autora: {{ .Title }}</h2>
+{{ $paginator := .Paginator }}
+{{ range $paginator.Pages }}
+{{ .Render "summary" }}
+{{ end }}
+{{ partial "pagination.html" .}}
+{{ end }}

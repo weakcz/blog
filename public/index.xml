@@ -2,26 +2,64 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>O linuxu</title>
-    <link>http://olinuxu.unas.cz/</link>
+    <link>blog/</link>
     <description>Recent content on O linuxu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cz</language>
-    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://olinuxu.unas.cz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Serenas Lucky Day Part 1</title>
+      <link>blog/prispevky/2021/02/serenas-lucky-day-01/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/prispevky/2021/02/serenas-lucky-day-01/</guid>
+      <description>SAN FRANCISCO - 12 YEARS AGO
+&amp;ldquo;I thought I told you two no ball in the house! I&amp;rsquo;m trying to watch the TV!&amp;rdquo;
+Don Agbayani sat up straight, mustered his meanest scowl, and turned around in his chair to face the two offenders. On his jobsites, he&amp;rsquo;d cultivated quite a reputation for ruthlessness. But the sight of his daughter and her little friend Mia rolling around and giggling hysterically on the living room floor was just too cute.</description>
+    </item>
+    
+    <item>
+      <title>Jak nainstalovat Arch Linux</title>
+      <link>blog/prispevky/2021/02/jak-nainstalovat-arch-linux/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/prispevky/2021/02/jak-nainstalovat-arch-linux/</guid>
+      <description>&lt;p&gt;V tomto článku vám ukážu jak nainstalovat Arch Linux.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Michelle&#39;s Meteor Memento 02</title>
+      <link>blog/prispevky/michelle-meteor-memento-part02/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/prispevky/michelle-meteor-memento-part02/</guid>
+      <description>&lt;p&gt;The morning sun had been shining into the apartment room for hours before its sole inhabitant finally decided to wake up. Michelle Jenkins had never been a deep sleeper and would normally wake up at the smallest hint of sunlight that entered her room.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Michelle&#39;s Meteor Memento 01</title>
+      <link>blog/prispevky/michelle-meteor-memento-part01/</link>
+      <pubDate>Wed, 03 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/prispevky/michelle-meteor-memento-part01/</guid>
+      <description>&lt;p&gt;The morning sun had been shining into the apartment room for hours before its sole inhabitant finally decided to wake up. Michelle Jenkins had never been a deep sleeper and would normally wake up at the smallest hint of sunlight that entered her room.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Proč jsem přešel na Linux</title>
-      <link>http://olinuxu.unas.cz/prispevky/2021/02/proc-jsem-presel-na-linux/</link>
+      <link>blog/prispevky/2021/02/proc-jsem-presel-na-linux/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://olinuxu.unas.cz/prispevky/2021/02/proc-jsem-presel-na-linux/</guid>
-      <description>Chci se tu podělit proč jsem vlastně z operačního systému Windows přešel na Linux.</description>
+      <guid>blog/prispevky/2021/02/proc-jsem-presel-na-linux/</guid>
+      <description>&lt;p&gt;Chci se tu podělit proč jsem vlastně z operačního systému Windows přešel na Linux.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Odkazy</title>
-      <link>http://olinuxu.unas.cz/odkazy/</link>
+      <link>blog/odkazy/</link>
       <pubDate>Wed, 09 Dec 2020 20:32:42 +0100</pubDate>
       
-      <guid>http://olinuxu.unas.cz/odkazy/</guid>
+      <guid>blog/odkazy/</guid>
       <description>Zde chci nabídnout zajímavé odkazy, které by čtenáře tohoto blogu mohly zajímat. Odkazy nejsou nijak speciálně řazeny. Prostě jak jsem je napsal, tak jsou. Není to seřazeno podle popularity nebo tak něco.
 Linux Youtube Chris Titus Tech
 DistroTube
@@ -38,21 +76,32 @@ r/</description>
     </item>
     
     <item>
-      <title>Michelle&#39;s Meteor Memento 01</title>
-      <link>http://olinuxu.unas.cz/prispevky/michelle-meteor-memento-part01/</link>
-      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      <title>Rozcestník</title>
+      <link>blog/rozcestnik/</link>
+      <pubDate>Wed, 09 Dec 2020 20:32:42 +0100</pubDate>
       
-      <guid>http://olinuxu.unas.cz/prispevky/michelle-meteor-memento-part01/</guid>
-      <description>&lt;p&gt;It was already dark, when Michelle Jenkins returned to her apartment. She was exhausted, the last weeks had taken a toll on her and she was really glad that the weekend had finally arrived.&lt;/p&gt;</description>
+      <guid>blog/rozcestnik/</guid>
+      <description>Abyste nemuseli hledat nějaké konkrétní téma, tak jsem vytvořil tento rozcestník.
+Linux Jak na arch linux Instalace Arch linuxu - dozvíte se jak nainstalovat Arch linux</description>
     </item>
     
     <item>
       <title>Markdown Syntax</title>
-      <link>http://olinuxu.unas.cz/prispevky/markdown-syntax/</link>
+      <link>blog/prispevky/markdown-syntax/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://olinuxu.unas.cz/prispevky/markdown-syntax/</guid>
+      <guid>blog/prispevky/markdown-syntax/</guid>
       <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Search Results</title>
+      <link>blog/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>blog/search/</guid>
+      <description>Nothing on this page will be visible. This file exists solely to respond to /search URL.
+Setting a very low sitemap priority will tell search engines this is not important content.</description>
     </item>
     
   </channel>

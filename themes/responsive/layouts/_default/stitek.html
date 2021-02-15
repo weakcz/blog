@@ -1,6 +1,5 @@
 {{ define "main" }}
-<h2>Štítek</h2>
-<h3>{{ .Title }}</h3>
+<h2 class="content-header">Štítek: {{ .Title }}</h2>
 {{ $paginator := .Paginator }}
 {{ range $paginator.Pages }}
 {{ .Render "summary" }}

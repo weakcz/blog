@@ -12,7 +12,6 @@ stitek:
 kategorie:
 - Arch Linux
 serial: "Jak na Arch Linux"
-nahled: obrazky/prispevky/michelles-meteor-memento/michelle_s_meteor_memento_nahled.png
 ---
 V tomto článku vám ukážu jak nainstalovat Arch Linux.
 <!--more-->

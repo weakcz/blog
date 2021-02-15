@@ -1,16 +1,18 @@
 <div class="post clearfix">
     {{ if .Params.nahled }}
     <img src="{{ .Params.nahled | relURL }}" alt="{{ .Title }}" class="post-image">
-    {{ end }}
     <div class="post-content">
+    {{ else }}
+    <div class="post-content-full">
+    {{ end }}
         <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         <div class="post-meta">
             <ul>
-            <li><i class="far fa-calendar"></i>&nbsp;{{- .Date.Format (.Site.Params.dateformat | default "02. 01. 2006") -}}</li>
-            {{- if .Params.author -}}
-            <li><i class="fa fa-user"></i> <a href="/author/{{.Params.author }}">{{ .Params.author}}</a></li>
+            <li><i class="far fa-calendar"></i>&nbsp;{{- .Date.Format (.Site.Params.dateformat | default "02. 01. 2006") -}}&nbsp;|&nbsp;</li>
+            {{- if .Params.autor -}}
+            <li><i class="fa fa-user"></i> <a href="/autor/{{.Params.autor | urlize }}">{{ .Params.autor}}</a>&nbsp;|&nbsp;</li>
             {{- end -}}
-            <li><i class="fa fa-inbox"></i>&nbsp;
+            <li><i class="fa fa-folder"></i>&nbsp;
             {{- $cat := "kategorie" -}}
             {{- with .Param $cat -}}
             {{- range $index, $category := . }}
@@ -23,18 +25,18 @@
             {{- end }}
             </li>
             {{ end }}
-            <li>
-                {{ if .Params.stitek }}
-                <i class="fa fa-tags"></i>
-                  {{ range .Params.stitek }}
-                    <a href="{{ "/stitek/" | relURL }}{{ . | urlize}}" class="tag">{{ . }}</a>&nbsp;
-                  {{ end }}
-                {{ end }}
-            </li>
             </ul>
         </div>
         <div class="post-preview">
             {{ .Summary }}
+        </div>
+        <div class="post-tags">
+            {{ if .Params.stitek }}
+            <i class="fa fa-tags"></i>
+              {{ range .Params.stitek }}
+                <a href="{{ "/stitek/" | relURL }}{{ . | urlize}}" class="tag">{{ . }}</a>&nbsp;
+              {{ end }}
+            {{ end }}
         </div>
     </div>
 </div>

@@ -1,46 +1,46 @@
 {{ define "main"}}
 <div class="post clearfix">
-    <div class="post-content-full">
-        <h2>{{ .Title }}</h2>
-        <div class="post-meta">
+    <div class="single-content">
+        <h1>{{ .Title }}</h1>
+        <div class="single-meta">
             <ul>
-            <li><i class="far fa-calendar"></i>&nbsp;{{- .Date.Format (.Site.Params.dateformat | default "02. 01. 2006") -}}</li>
-            {{- if .Params.author -}}
-            <li><i class="fa fa-user"></i> <a href="#">{{ .Params.author}}</a></li>
-            {{- end -}}
-            <li><i class="fa fa-inbox"></i>&nbsp;
-            {{- $cat := "kategorie" -}}
-            {{- with .Param $cat -}}
-            {{- range $index, $category := . }}
-			{{- $url := urls.Parse ($category | urlize) -}}
-			{{- $path := $url.Path -}}
-			{{- with $.Site.GetPage (printf "/%s/%s" $cat $path) }}
-				{{- if gt $index 0 }}&nbsp;{{ end -}}
-				<a  href="{{ .RelPermalink }}" rel="category">{{ .Title }}</a>
-			{{- end }}
-            {{- end }}
-            </li>
-            {{ end }}
-               
-            <li>
-                {{ if .Params.stitek }}
-                <i class="fa fa-tags"></i>
-                  {{ range .Params.stitek }}
-                    <a href="{{ "/stitek/" | relURL }}{{ . | urlize}}" class="tag">{{ . }}</a>&nbsp;
-                  {{ end }}
+                <li><i class="far fa-calendar"></i>&nbsp;{{- .Date.Format (.Site.Params.dateformat | default "02. 01.2006") -}}&nbsp;|&nbsp;</li>
+                {{- if .Params.author -}}
+                <li><i class="fa fa-user"></i> <a href="#">{{ .Params.author}}</a></li>
+                {{- end -}}
+                <li><i class="fa fa-folder"></i>&nbsp;
+                    {{- $cat := "kategorie" -}}
+                    {{- with .Param $cat -}}
+                    {{- range $index, $category := . }}
+                    {{- $url := urls.Parse ($category | urlize) -}}
+                    {{- $path := $url.Path -}}
+                    {{- with $.Site.GetPage (printf "/%s/%s" $cat $path) }}
+                    {{- if gt $index 0 }}&nbsp;{{ end -}}
+                    <a href="{{ .RelPermalink }}" rel="category">{{ .Title }}</a>
+                    {{- end }}
+                    {{- end }}
+                </li>
                 {{ end }}
-            </li>
+
             </ul>
         </div>
-        <div class="post-preview markdown">
+        <div class="single-body mark-body">
             {{ .Content }}
         </div>
-        
+        <div class="single-tags">
+            {{ if .Params.stitek }}
+            <b>Štítky:&nbsp;</b>
+            {{ range .Params.stitek }}
+            <a href="{{ " /stitek/" | relURL }}{{ . | urlize}}" class="tag">{{ . }}</a>&nbsp;
+            {{ end }}
+            {{ end }}
+        </div>
+
         {{ $post_title := .Title }}
         {{ if .Params.serial }}
         <hr>
-        <h3>Další v seriálu:  {{ .Params.serial }}</h3>
-        {{ $ser := .Params.serial | urlize}}  
+        <h3>Další v seriálu: {{ .Params.serial }}</h3>
+        {{ $ser := .Params.serial | urlize}}
         {{ range $key, $taxonomy := .Site.Taxonomies.serial }}
         {{ if eq $key $ser}}
         <ul>
@@ -50,15 +50,16 @@
                 <b>{{ .LinkTitle }}</b> <i>[právě čtete]</i>
             </li>
             {{ else }}
-                        <li hugo-nav="{{ .RelPermalink }}">
+            <li hugo-nav="{{ .RelPermalink }}">
                 <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
             </li>
             {{ end }}
             {{ end }}
         </ul>
         {{ end }}
-    {{ end }}
-    {{ end }}
+        {{ end }}
+        {{ end }}
     </div>
+    
 </div>
 {{ end }}

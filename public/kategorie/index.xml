@@ -2,35 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kategorie on O linuxu</title>
-    <link>http://olinuxu.unas.cz/kategorie/</link>
+    <link>blog/kategorie/</link>
     <description>Recent content in Kategorie on O linuxu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cz</language>
-    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://olinuxu.unas.cz/kategorie/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="blog/kategorie/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Osobní</title>
-      <link>http://olinuxu.unas.cz/kategorie/osobn%C3%AD/</link>
-      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      <title>Povídky</title>
+      <link>blog/kategorie/povidky/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://olinuxu.unas.cz/kategorie/osobn%C3%AD/</guid>
+      <guid>blog/kategorie/povidky/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Povídky</title>
-      <link>http://olinuxu.unas.cz/kategorie/pov%C3%ADdky/</link>
-      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      <title>Arch Linux</title>
+      <link>blog/kategorie/arch-linux/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://olinuxu.unas.cz/kategorie/pov%C3%ADdky/</guid>
+      <guid>blog/kategorie/arch-linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Osobní</title>
+      <link>blog/kategorie/osobni/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/kategorie/osobni/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mark</title>
-      <link>http://olinuxu.unas.cz/kategorie/mark/</link>
+      <link>blog/kategorie/mark/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://olinuxu.unas.cz/kategorie/mark/</guid>
+      <guid>blog/kategorie/mark/</guid>
       <description></description>
     </item>
     

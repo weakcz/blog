@@ -2,17 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Author on O linuxu</title>
-    <link>http://olinuxu.unas.cz/author/</link>
+    <link>blog/author/</link>
     <description>Recent content in Author on O linuxu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cz</language>
-    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://olinuxu.unas.cz/author/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="blog/author/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yohashuan</title>
+      <link>blog/author/yohashuan/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/author/yohashuan/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>weak</title>
-      <link>http://olinuxu.unas.cz/author/weak/</link>
+      <link>blog/author/weak/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://olinuxu.unas.cz/author/weak/</guid>
+      <guid>blog/author/weak/</guid>
       <description></description>
     </item>
     

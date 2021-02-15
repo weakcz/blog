@@ -1,6 +1,5 @@
 {{ define "main" }}
-<h2>Seriál</h2> 
-<h3>{{ .Title }}</h3>
+<h2 class="content-header">Seriál: {{ .Title }}</h2>
 {{ $paginator := .Paginator }}
 {{ range $paginator.Pages }}
 {{ .Render "summary" }}
