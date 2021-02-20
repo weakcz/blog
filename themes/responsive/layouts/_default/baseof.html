@@ -6,7 +6,7 @@
         <div class="main-content">
             {{- partial "header.html" . -}}
             <div class="wrapper clearfix">
-                <div class="{{ if eq .Params.showSidebar false }}content-full{{ else}}content{{ end }}"> 
+                <div class="content {{ if eq .Params.showSidebar false }}{{ if eq .Params.showTOC true }}sized{{ else }}full{{ end }}{{ else}}sized{{ end }}"> 
                     
                     {{- block "main" . }}
                     
@@ -15,7 +15,7 @@
                 </div>
                 {{ if eq .Params.showTOC true }}
                     <div class="sidebar-toc">
-                    <h2>Obsah</h2>
+                    <h2>Obsah stránky</h2>
                         {{ .TableOfContents }}
                     </div>
                 {{ end }}

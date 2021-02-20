@@ -18,6 +18,7 @@ body {
 
 }
 
+
 body a {
     color: #57CC8A;
     text-decoration: none;
@@ -186,10 +187,16 @@ border-radius: 7%;
 .content {
     position: relative;
     float: left;
-    width: 75%;
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 60px; 
+}
+.sized { 
+    width: 75%;
+}
+
+.full {
+    width: 100%;
 }
 
 .mark-body h2 {
@@ -221,6 +228,8 @@ border-radius: 7%;
     padding: 10px;
 }
 
+
+
 .mark-body kbd {
     background-color: #494F56;
 
@@ -230,6 +239,27 @@ img[src$='#center']
 {
     display: block;
     margin: 0.7rem auto; 
+}
+
+.mark-body code {
+    background: #494F56;
+    overflow-x: scroll;
+}
+
+.mark-body .highlight pre {
+    overflow-x: scroll;
+  }
+
+.mark-body .highlight pre code {
+    background: inherit;
+    overflow-x: scroll;
+}
+.mark-body mark {
+    background-color:#57CC8A;
+}
+
+pre code {
+    background-color: blue;
 }
 
 /* Příspěvek */
@@ -410,6 +440,7 @@ margin-bottom: 0.5em;
     background-color: #242930;
     width: 100%;
     text-align: center;
+    font-size: 0.8em;
     padding: 1em;
     border-top: 1px solid #57CC8A;
     height: 60px;
@@ -418,10 +449,7 @@ margin-bottom: 0.5em;
 
 /* Responsivita */
 
-@media only screen and (max-width: 1020px) {
-    .wrapper {
-        width: 100%;
-    }
+@media only screen and (max-width: 1210px) {
     .logo-img {
         margin-left: 1em;
     }
@@ -448,9 +476,18 @@ margin-bottom: 0.5em;
     .main-content {
         height: 100%;
     }
-
+    .sidebar {
+        margin-bottom: 60px;
+    }
+.wrapper {
+    width: 100%;
+}
 }
 @media only screen and (max-width: 750px) {
+
+    .wrapper {
+        padding-bottom: 60px;
+    }
     .nav-menu {
         display: none;
     }
@@ -478,17 +515,28 @@ margin-bottom: 0.5em;
         
     }
 
+
     .content {
-        width: 100%;
         padding: 0px 20px 0px 20px;
     }
 
 
     .sidebar {
-        width: 100%;
         text-align: center;
-        padding: 0px 0px 80px 0px;
+        width: 100%;
+
    
+    }
+
+    .full {
+        width: 100%
+    }
+    .sized {
+        width: 100%;
+    }
+
+    .sidebar-toc {
+        display: none;
     }
 .post {
     margin-bottom: 1em;

@@ -4,6 +4,7 @@ date: 2021-02-13
 description: "V tomto návodu si ukážeme jak nainstalovat server Apache, databázi MariaDB a PHP v Arch Linuxu"
 draft: false
 showTOC: true
+showSidebar: true
 stitek:
 - apache
 - php

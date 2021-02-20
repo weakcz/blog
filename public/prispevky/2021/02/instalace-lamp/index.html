@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="cz"><head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> 
+    <title>Jak nainstalovat LAMP (Apache, MySQL, PHP) v Arch Linuxu | O linuxu</title>
+    <meta name="description" content="V tomto návodu si ukážeme jak nainstalovat server Apache, databázi MariaDB a PHP v Arch Linuxu ">
+    <link rel="canonical" href="blog/prispevky/2021/02/instalace-lamp/" />
+    <meta property="og:image" content="/blog/">
+    <meta property="og:title" content="Jak nainstalovat LAMP (Apache, MySQL, PHP) v Arch Linuxu" />
+<meta property="og:description" content="V tomto návodu si ukážeme jak nainstalovat server Apache, databázi MariaDB a PHP v Arch Linuxu" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="blog/prispevky/2021/02/instalace-lamp/" />
+<meta property="article:published_time" content="2021-02-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-02-13T00:00:00+00:00" />
+
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Jak nainstalovat LAMP (Apache, MySQL, PHP) v Arch Linuxu"/>
+<meta name="twitter:description" content="V tomto návodu si ukážeme jak nainstalovat server Apache, databázi MariaDB a PHP v Arch Linuxu"/>
+
+    
+    
+        
+    
+</head>
+<body>
+        <div class="main-content"><div class="header clearfix">
+    <div class="wrapper">
+        <a href="/"><img src="/logo.png" class="logo-img"></a>
+        <h1 class="nav-logo"><a href="/">O linuxu</a></h1>
+        <nav>
+            <ul class="nav-menu" id="nav-menu">
+                
+                    <li><a href="blog/omne">O mně</a></li>
+                
+                    <li><a href="blog/odkazy">Odkazy</a></li>
+                
+                    <li><a href="blog/rozcestnik">Rozcestník</a></li>
+                
+                    <li><a href="blog/rss.xml">Rss</a></li>
+                
+            </ul>
+            <form class="nav-search" id="nav-search" action="/search" method="GET">
+                <input name="s" type="text" placeholder="Zadejte co chcete hledat">
+                <button><i class="fa fa-search"></i></button>
+            </form>
+            <div class="btn search-btn"><span class="fa fa-search" id="search-btn"></span></div>
+            <div class="btn menu-btn"><span class="fa fa-bars" id="menu-btn"></span></div>
+        </nav>
+    </div>
+</div><div class="wrapper clearfix">
+                <div class="content">
+<div class="post clearfix">
+    <div class="single-content">
+        <h1>Jak nainstalovat LAMP (Apache, MySQL, PHP) v Arch Linuxu</h1>
+        <div class="single-meta">
+            <ul>
+                <li><i class="far fa-calendar"></i>&nbsp;13. 02.2021&nbsp;|&nbsp;</li><li><i class="fa fa-folder"></i>&nbsp;<a href="blog/kategorie/navody/" rel="category">Návody</a>
+                </li>
+                
+
+            </ul>
+        </div>
+        <div class="single-body mark-body">
+            <p>LAMP je akronym <strong>L</strong>inux <strong>A</strong>pache <strong>M</strong>ySQL a <strong>P</strong>hp. V tomto tutoriálu si ukážeme, jak nainstalovat LAMP v Arch Linuxu.</p>
+<h2 id="update-systému">Update systému</h2>
+<p>Nejdříve provedeme update systému. Do terminálu zadejte</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -Syu
+</code></pre></div><h2 id="instalace-apache">Instalace Apache</h2>
+<p>Po updatu nainstalujeme server Apache</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -S apache
+</code></pre></div><p>Otevřete si v textovém editoru <strong>/etc/httpd/conf/httpd.conf</strong></p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nano /etc/httpd/conf/httpd.conf
+</code></pre></div><p>najděte</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[...]
+#LoadModule unique_id_module modules/mod_unique_id.so
+[...]
+</code></pre></div><p>a odstraňte <strong>#</strong> před na začátku řádku. Soubor uložte.</p>
+<p>Nastavíme server, tak aby se spouštěl při bootu systému.</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl <span style="color:#24909d">enable</span> httpd
+systemctl restart httpd
+</code></pre></div><p>Ověříme si, zda server opravdu jede</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl status httpd
+</code></pre></div><p>Pokud se zobrazí tohle, tak server jede v pořádku</p>
+<p><img src="/obrazky/prispevky/instalace-lamp/01-server-status.png" alt="Server status"></p>
+<h3 id="otestujeme-apache">Otestujeme Apache</h3>
+<p>Vyzkoušíme, zda server opravdu funguje. Do hlavního adresáře serveru <strong>/srv/http/</strong> vytvoříme soubor pomocí příkazu</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nano /srv/http/index.html
+</code></pre></div><p>do souboru vložíme tohle:</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#6ab825;font-weight:bold">html</span>&gt;
+ &lt;<span style="color:#6ab825;font-weight:bold">title</span>&gt;Test&lt;/<span style="color:#6ab825;font-weight:bold">title</span>&gt;
+  &lt;<span style="color:#6ab825;font-weight:bold">body</span>&gt;
+   &lt;<span style="color:#6ab825;font-weight:bold">h2</span>&gt;Test Apache serveru&lt;/<span style="color:#6ab825;font-weight:bold">h2</span>&gt;
+  &lt;/<span style="color:#6ab825;font-weight:bold">body</span>&gt;
+&lt;/<span style="color:#6ab825;font-weight:bold">html</span>&gt;
+</code></pre></div><p>pak soubor uložte.</p>
+<p>Nyní si v prohlížeči otevřete adresu <strong>http://localhost</strong> a měli byste vidět tohle:</p>
+<p><img src="/obrazky/prispevky/instalace-lamp/02-apache-test.png#center" alt="localhost"></p>
+<h2 id="instalace-mariadb">Instalace MariaDB</h2>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -S mysql
+</code></pre></div><p>MariaDB je oficiální hlavní implementace mySQL v Arch Linuxu. Proto z nabídnutých možností vyberte MaraDB.</p>
+<p>Než spustíme MariaDB, tak se musíme databázi napřed zinicializovat.</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+</code></pre></div><p>Nyní nastavíme databázi, tak aby se spouštěla při startu systému</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl <span style="color:#24909d">enable</span> mysqld
+systemctl restart mysqld
+</code></pre></div><p>Otestujeme, zda databáze funguje.</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl status mysqld
+</code></pre></div><p>Pokud se zobrazí tohle, tak vše jede, tak jak má.</p>
+<p><img src="/obrazky/prispevky/instalace-lamp/03-mysql-status.png" alt="Mysql status"></p>
+<h3 id="nastavíme-hlavní-heslo-k-mariadb">Nastavíme hlavní heslo k MariaDB</h3>
+<p>Doporučuje se nastavit root heslo k MariaDB. To provedeme pomocí příkazu:</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql_secure_installation
+</code></pre></div><p>spustí se průvodce instalací. Instalace se bude ptát na různé otázky, tak odpovězte podle tohoto:</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Enter current password for root (enter for none): Zmáčkněte Enter
+Switch to unix_socket authentication [Y/n]: Zadejte n
+Change the root password? [Y/n]: potvrďte Enterem
+New password: Zadejte Vaše heslo
+Re-enter new password: Znovu zadejte heslo pro potvrzení
+Remove anonymous users [Y/n]: potvrďte Enterem
+Disallow root login remotely? [Y/n]: opět Enter
+Remove test database and access to it [Y/n]: opět Enter
+Reload privilege tables now? [Y/n]
+</code></pre></div><p>Datbáze by měla být nastavená a připravená k používání.</p>
+<h2 id="instalace-php">Instalace PHP</h2>
+<p>K instalaci PHP v Arch Linuxu spusťte</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -S php php-apache
+</code></pre></div><p>Po instalaci PHP musíme nastavit PHP modul na serveru. Otevřete soubor <em>httpd.conf</em></p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nano /etc/httpd/conf/httpd.conf
+</code></pre></div><p>Najděte následující řádek a odstraňte a přidejt <strong>#</strong> na začátek řádku, pokud už tam není.</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">#LoadModule mpm_event_module modules/mod_mpm_event.so
+</code></pre></div><p>a odstraňte <strong>#</strong> z</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">LoadModule mpm_prefork_module modules/mod_mpm_prefork.so
+</code></pre></div><p>a na konec sekce kde jsou <strong>LoadModule</strong> přidejte</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">LoadModule php_module modules/libphp.so
+AddHandler php-script .php
+</code></pre></div><p>A na konec souboru přidejte</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Include conf/extra/php_module.conf
+</code></pre></div><p>Teď jenom restartujeme server</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl restart httpd
+</code></pre></div><h3 id="otestujeme-php">Otestujeme PHP</h3>
+<p>vytvoříme soubor</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nano /srv/http/test.php
+</code></pre></div><p>a do souboru vložte</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php
+ phpinfo();
+<span style="color:#cd2828;font-weight:bold">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></code></pre></div><p>soubor uložte.</p>
+<p>Nyní když půjdete v prohlížeči na <strong>http://localhost/test.php</strong> mělo by se vám zobrazit tohle:</p>
+<p><img src="/obrazky/prispevky/instalace-lamp/04-php-info.png" alt="Php Info"></p>
+<p>A to je celá instalace Apache PHP a Mysql.</p>
+        </div>
+        <div class="single-tags">
+            
+            <b>Štítky:&nbsp;</b>
+            
+            <a href="/blog/%20/stitek/apache" class="tag">apache</a>&nbsp;
+            
+            <a href="/blog/%20/stitek/php" class="tag">php</a>&nbsp;
+            
+            <a href="/blog/%20/stitek/mariadb" class="tag">mariadb</a>&nbsp;
+            
+            <a href="/blog/%20/stitek/navod" class="tag">návod</a>&nbsp;
+            
+            <a href="/blog/%20/stitek/instalace" class="tag">instalace</a>&nbsp;
+            
+            
+        </div>
+
+        
+        
+    </div>
+    
+</div>
+
+
+                </div>
+                
+                    <div class="sidebar-toc">
+                    <h2>Obsah</h2>
+                        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#update-systému">Update systému</a></li>
+    <li><a href="#instalace-apache">Instalace Apache</a>
+      <ul>
+        <li><a href="#otestujeme-apache">Otestujeme Apache</a></li>
+      </ul>
+    </li>
+    <li><a href="#instalace-mariadb">Instalace MariaDB</a>
+      <ul>
+        <li><a href="#nastavíme-hlavní-heslo-k-mariadb">Nastavíme hlavní heslo k MariaDB</a></li>
+      </ul>
+    </li>
+    <li><a href="#instalace-php">Instalace PHP</a>
+      <ul>
+        <li><a href="#otestujeme-php">Otestujeme PHP</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                    </div>
+                
+                
+                <div class="sidebar clearfix">
+
+    <div class="sidebar-item">
+        <a href="/kategorie/"><h2>Kategorie</h2></a>
+        <div>
+            <ul>
+            
+                <li><a href="blog/kategorie/arch-linux/">Arch Linux</a></li>
+            
+                <li><a href="blog/kategorie/mark/">Mark</a></li>
+            
+                <li><a href="blog/kategorie/mermaids/">Mermaids</a></li>
+            
+                <li><a href="blog/kategorie/navody/">Návody</a></li>
+            
+                <li><a href="blog/kategorie/osobni/">Osobní</a></li>
+            
+                <li><a href="blog/kategorie/povidky/">Povídky</a></li>
+            
+            </ul>
+        </div>
+    </div>
+
+
+
+<div class="sidebar-item">
+    <a href="/serial/"><h2>Seriály</h2></a>
+    <div>
+        <ul>
+        
+          <li><a href="blog/serial/changes-in-paradise/">Changes In Paradise</a></li>
+       
+          <li><a href="blog/serial/jak-na-arch-linux/">Jak na Arch Linux</a></li>
+       
+          <li><a href="blog/serial/michelles-meteor-memento/">Michelle&#39;s Meteor Memento</a></li>
+       
+          <li><a href="blog/serial/serenas-lucky-day/">Serena&#39;s Lucky Day</a></li>
+       
+        </ul>
+    </div>
+</div>
+
+
+    <div class="sidebar-tags">
+        <a href="/stitek/"><h2>Štítky</h2></a>
+        <div class="sidebar-tag-cloud">
+            
+            
+            
+                <a href="blog/stitek/apache/" class="tag">apache</a><span class="tag-count">1</span>
+            
+            
+                <a href="blog/stitek/arch/" class="tag">arch</a><span class="tag-count">1</span>
+            
+            
+                <a href="blog/stitek/blbost/" class="tag">blbost</a><span class="tag-count">1</span>
+            
+            
+                <a href="blog/stitek/flying/" class="tag">flying</a><span class="tag-count">2</span>
+            
+            
+                <a href="blog/stitek/instalace/" class="tag">instalace</a><span class="tag-count">2</span>
+            
+            
+                <a href="blog/stitek/jeste/" class="tag">jeste</a><span class="tag-count">1</span>
+            
+            
+                <a href="blog/stitek/letani/" class="tag">létání</a><span class="tag-count">19</span>
+            
+            
+                <a href="blog/stitek/linux/" class="tag">linux</a><span class="tag-count">2</span>
+            
+            
+                <a href="blog/stitek/mariadb/" class="tag">mariadb</a><span class="tag-count">1</span>
+            
+            
+                <a href="blog/stitek/mermaids/" class="tag">mermaids</a><span class="tag-count">11</span>
+            
+            
+                <a href="blog/stitek/navod/" class="tag">návod</a><span class="tag-count">1</span>
+            
+            
+                <a href="blog/stitek/osobni/" class="tag">osobní</a><span class="tag-count">1</span>
+            
+            
+                <a href="blog/stitek/php/" class="tag">php</a><span class="tag-count">1</span>
+            
+            
+                <a href="blog/stitek/povidky/" class="tag">povídky</a><span class="tag-count">19</span>
+            
+            
+                <a href="blog/stitek/supersila/" class="tag">supersíla</a><span class="tag-count">19</span>
+            
+            
+                <a href="blog/stitek/superstrength/" class="tag">superstrength</a><span class="tag-count">2</span>
+            
+            
+                <a href="blog/stitek/transformace/" class="tag">transformace</a><span class="tag-count">19</span>
+            
+            
+                <a href="blog/stitek/transformation/" class="tag">transformation</a><span class="tag-count">13</span>
+            
+            
+                <a href="blog/stitek/transgender/" class="tag">transgender</a><span class="tag-count">11</span>
+            
+            
+                <a href="blog/stitek/vetsi/" class="tag">vetsi</a><span class="tag-count">1</span>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+                
+            </div><div class="footer clearfix">
+    &copy; 2021 Olinuxu. Blog je tvořen pomocí generátoru statických stránek <a href="hugo">Hugo</a>
+</div></div>
+        <script>
+            document.getElementById('menu-btn').addEventListener('click', function () {
+              document.getElementById('nav-menu').classList.toggle('show-menu')
+              document.getElementById('nav-search').classList.remove('show-search')
+            })
+            document.getElementById('search-btn').addEventListener('click', function () {
+              document.getElementById('nav-search').classList.toggle('show-search')
+              document.getElementById('nav-menu').classList.remove('show-menu')
+            })
+
+            </script>
+    </body>
+</html>

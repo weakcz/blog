@@ -14,6 +14,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5em;
     font-size: 18px;
+    height: 100%;
 
 }
 
@@ -56,33 +57,19 @@ border-radius: 7%;
     color: white;
 }
 
-/* Markdown styly */
-.markdown h1,h2,h3,h4,h5,h6
- {
-  color: white;
+.tag-cloud {
+    font-size: 0.8em;
+    line-height: 1.5em;
 }
 
-.markdown blockquote {
-    margin: 0px;
-    padding-left: 10px;
-    border-left: 5px solid #57CC8A;
+.tag-count {
+    background-color: #242930;
+    padding: 0.3em;
+    border-radius: 15%;
 }
 
-.markdown table, th, td {
-    border: 1px solid;
-    margin:0px;
-    padding: 10px;
-    border-collapse: collapse;
-}
-
-.markdown pre {
-    border-left: 5px solid #57CC8A;
-    padding: 10px;
-}
-
-.markdown kbd {
-    background-color: #494F56;
-
+.content-header {
+    color: white;
 }
 
 /* Hlavička */
@@ -101,7 +88,7 @@ border-radius: 7%;
     height: 40px;
 }
 .wrapper {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
     height: inherit;
 }
@@ -194,7 +181,6 @@ border-radius: 7%;
     min-height: 100vh;
     margin: 0px;
     padding: 0px;
-
 }
 
 .content {
@@ -206,9 +192,45 @@ border-radius: 7%;
     padding-bottom: 60px; 
 }
 
+.mark-body h2 {
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
 
+.mark-body h3 {
+    color:white;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.mark-body blockquote {
+    margin: 0px;
+    padding-left: 10px;
+    border-left: 5px solid #57CC8A;
+}
 
+.mark-body table, th, td {
+    border: 1px solid;
+    margin:0px;
+    padding: 10px;
+    border-collapse: collapse;
+}
 
+.mark-body pre {
+    border-left: 5px solid #57CC8A;
+    padding: 10px;
+}
+
+.mark-body kbd {
+    background-color: #494F56;
+
+}
+
+img[src$='#center']
+{
+    display: block;
+    margin: 0.7rem auto; 
+}
 
 /* Příspěvek */
 .post {
@@ -235,6 +257,10 @@ border-radius: 7%;
     padding: 0px;
 }
 
+.post-content-full h2 {
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
+}
 .post-meta {
     font-size: 0.8em;
     margin: 0px;
@@ -242,7 +268,6 @@ border-radius: 7%;
 }
 
 .post-meta ul {
-    border: 1px red;
     padding: 0px;
     margin: 0px; 
 }
@@ -260,22 +285,54 @@ border-radius: 7%;
     width: 100%;
 }
 
+.post-tags {
+    font-size: 0.8em;
+}
+
+.single-content h1 {
+    color: white;
+    font-size: 1.8em;
+    line-height: 1.0em;
+}
+
+.single-meta ul {
+    padding: 0px;
+    margin: 0px; 
+}
+.single-meta li {
+    display: inline;
+    margin-right: 5px;
+    font-size: 0.8em;
+}
+
+.single-tags {
+    font-size: 0.9em;
+    margin-bottom: 1.5em;
+}
+
+.single-content img {
+    max-width: 100%;
+    align: center;
+}
+
+
 
 
 .sidebar {
     float: right;
     width: 25%;
-    padding: 1em;
     padding-bottom: 40px;
     line-height: 1em;
+    padding-left:10px;
+    padding-right: 1px;
 }
 
-.sidebar ul {
+.sidebar-item ul {
     list-style: none;
     padding: 0px;
     margin: 0px;
 }
-.sidebar li {
+.sidebar-item li {
 margin-bottom: 0.5em;
 }
 
@@ -287,25 +344,46 @@ margin-bottom: 0.5em;
     color: white;
 }
 
+.sidebar-toc {
+    float: right;
+    width: 25%;
+    line-height: 1.5em;
+    position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  padding-top: 1px;
+  background: #353B43;
+  color: white;
+}
+
+.sidebar-toc ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.sidebar-toc ul li ul {
+    list-style:circle;
+    padding-left: 20px;
+}
+
+.sidebar-toc ul li ul li {
+    font-size:0.9em;
+}
+
 .sidebar h2 {
     color: white;
 }
-.sidebar-tags {
+
+.sidebar-tag-cloud {
+    font-size:0.9em;
+    line-height: 2.5em;
+    text-align: center;
 }
 
-.sidebar-tags ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: justify;
-  
-
+.taxo-tags {
+    text-align: center;
+    line-height: 2.5em;
 }
-
-.sidebar-tags li {
-    display: inline;
-    margin: 5px
-}
-
 
 /* Stránkování*/
 .pagination {

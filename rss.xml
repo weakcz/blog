@@ -1,0 +1,26 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+ 2  <channel>
+ 3    <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
+ 4    <link>{{ .Permalink }}</link>
+ 5    <description>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}</description>
+ 6    <generator>Hugo -- gohugo.io</generator>{{ with .Site.LanguageCode }}
+ 7    <language>{{.}}</language>{{end}}{{ with .Site.Author.email }}
+ 8    <managingEditor>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</managingEditor>{{end}}{{ with .Site.Author.email }}
+ 9    <webMaster>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</webMaster>{{end}}{{ with .Site.Copyright }}
+10    <copyright>{{.}}</copyright>{{end}}{{ if not .Date.IsZero }}
+11    <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
+12    {{ with .OutputFormats.Get "RSS" }}
+13        {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+14    {{ end }}
+15    {{ range where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+16    <item>
+17      <title>{{ .Title }}</title>
+18      <link>{{ .Permalink }}</link>
+19      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+20      {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
+21      <guid>{{ .Permalink }}</guid>
+22      <description>{{ .Summary | html }}</description>
+23    </item>
+24    {{ end }}
+25  </channel>
+26</rss>

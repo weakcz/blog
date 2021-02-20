@@ -1,7 +1,7 @@
 ---
 title: "Serenas Lucky Day Part 2"
 date: 2021-02-08
-image: obrazky/prispevky/michelles-meteor-memento/michelle_s_meteor_memento_nahled.png
+image: obrazky/prispevky/serenas-lucky-day/serenas-lucky-day-poster.jpg
 description: "A regular girl discovers the secret of the world's mightiest superheroine"
 autor: Yohashuan
 draft: false

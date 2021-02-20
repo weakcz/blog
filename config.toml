@@ -1,4 +1,4 @@
-baseURL = "blog/"
+baseURL = ""
 languageCode = "cz"
 title = "O linuxu"
 theme = "responsive"
@@ -34,7 +34,7 @@ googleAnalytics = ""
 
 [[menu.main]]
   name = "Rss"
-  url = "/rss.xml"
+  url = "/index.xml"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

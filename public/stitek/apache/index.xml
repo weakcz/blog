@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>apache on O linuxu</title>
+    <link>blog/stitek/apache/</link>
+    <description>Recent content in apache on O linuxu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cz</language>
+    <lastBuildDate>Sat, 13 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="blog/stitek/apache/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jak nainstalovat LAMP (Apache, MySQL, PHP) v Arch Linuxu</title>
+      <link>blog/prispevky/2021/02/instalace-lamp/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/prispevky/2021/02/instalace-lamp/</guid>
+      <description>&lt;p&gt;LAMP je akronym &lt;strong&gt;L&lt;/strong&gt;inux &lt;strong&gt;A&lt;/strong&gt;pache &lt;strong&gt;M&lt;/strong&gt;ySQL a &lt;strong&gt;P&lt;/strong&gt;hp. V tomto tutoriálu si ukážeme, jak nainstalovat LAMP v Arch Linuxu.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -4,10 +4,10 @@ date: 2020-05-11
 description: "Markdown Syntax test page"
 draft: false
 author: weak
+showToc: true
+showSidebar: true
 stitek:
-- blbost
-- jeste
-- vetsi
+- markdown
 kategorie: 
 - Mark
 nahled: obrazky/nahled_markdown-syntax.jpg

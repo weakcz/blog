@@ -6,7 +6,61 @@
     <description>Recent content in Stitek on O linuxu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cz</language>
-    <lastBuildDate>Mon, 08 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="blog/stitek/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="blog/stitek/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>apache</title>
+      <link>blog/stitek/apache/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/stitek/apache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>instalace</title>
+      <link>blog/stitek/instalace/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/stitek/instalace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mariadb</title>
+      <link>blog/stitek/mariadb/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/stitek/mariadb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>návod</title>
+      <link>blog/stitek/navod/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/stitek/navod/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>blog/stitek/php/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/stitek/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flying</title>
+      <link>blog/stitek/flying/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/stitek/flying/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>létání</title>
       <link>blog/stitek/letani/</link>
@@ -22,6 +76,15 @@
       <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>blog/stitek/povidky/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>superstrength</title>
+      <link>blog/stitek/superstrength/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/stitek/superstrength/</guid>
       <description></description>
     </item>
     
@@ -44,20 +107,20 @@
     </item>
     
     <item>
+      <title>transformation</title>
+      <link>blog/stitek/transformation/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/stitek/transformation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>arch</title>
       <link>blog/stitek/arch/</link>
       <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>blog/stitek/arch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>instalace</title>
-      <link>blog/stitek/instalace/</link>
-      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>blog/stitek/instalace/</guid>
       <description></description>
     </item>
     
@@ -76,6 +139,24 @@
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>blog/stitek/osobni/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mermaids</title>
+      <link>blog/stitek/mermaids/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/stitek/mermaids/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>transgender</title>
+      <link>blog/stitek/transgender/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/stitek/transgender/</guid>
       <description></description>
     </item>
     

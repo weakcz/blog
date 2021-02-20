@@ -2,10 +2,12 @@
 title: "Odkazy"
 date: 2020-12-09T20:32:42+01:00
 layout: "page"
-showSidebar: false
+description: "Stránka se zajímavými odkazy"
+showSidebar: true
 ---
 
 Zde chci nabídnout zajímavé odkazy, které by čtenáře tohoto blogu mohly zajímat. Odkazy nejsou nijak speciálně řazeny. Prostě jak jsem je napsal, tak jsou. Není to seřazeno podle popularity nebo tak něco.
+<!--more-->
 
 ## Linux
 

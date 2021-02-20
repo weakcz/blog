@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>superstrength on O linuxu</title>
+    <link>blog/stitek/superstrength/</link>
+    <description>Recent content in superstrength on O linuxu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cz</language>
+    <lastBuildDate>Mon, 08 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="blog/stitek/superstrength/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Serenas Lucky Day Part 2</title>
+      <link>blog/prispevky/2021/02/serenas-lucky-day-02/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/prispevky/2021/02/serenas-lucky-day-02/</guid>
+      <description>&lt;p&gt;A regular girl discovers the secret of the world&amp;rsquo;s mightiest superheroine&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Serenas Lucky Day Part 3</title>
+      <link>blog/prispevky/2021/02/serenas-lucky-day-03/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>blog/prispevky/2021/02/serenas-lucky-day-03/</guid>
+      <description>&lt;p&gt;A regular girl discovers the secret of the world&amp;rsquo;s mightiest superheroine&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
