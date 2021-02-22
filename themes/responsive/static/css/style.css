@@ -247,12 +247,11 @@ img[src$='#center']
 }
 
 .mark-body .highlight pre {
-    overflow-x: scroll;
+overflow-x: auto;
   }
 
 .mark-body .highlight pre code {
     background: inherit;
-    overflow-x: scroll;
 }
 .mark-body mark {
     background-color:#57CC8A;
