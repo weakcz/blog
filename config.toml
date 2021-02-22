@@ -5,8 +5,6 @@ theme = "responsive"
 removePathAccents = true
 paginate = "10"
 
-prispevky =":/title/"
-
 googleAnalytics = ""
 
 [params]
